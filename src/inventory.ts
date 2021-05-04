@@ -22,5 +22,3 @@ export function calcInventoryValue(inventory: InventoryItem[]): number {
     }
     return 0;
 }
-
-console.log(calcInventoryValue(inventory));
