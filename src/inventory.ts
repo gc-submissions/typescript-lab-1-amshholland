@@ -16,7 +16,7 @@ export function calcInventoryValue(inventory: InventoryItem[]): number {
 
     if (inventory.length !== 0) {
         inventory.forEach(function (item) {
-            sum += item.price * item.quantity;
+            sum += item.product.price * item.quantity;
         })
         return sum;
     }
