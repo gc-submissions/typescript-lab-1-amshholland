@@ -1,7 +1,7 @@
 export interface Product {
-    name: string,
-    price: number
-};
+    name: string;
+    price: number;
+}
 
 const products: Product[] = [
     { name: "yoyo", price: 4.99 },

@@ -1,14 +1,13 @@
 import { Product } from "../src/products";
 
-interface InventoryItem {
-    product: Product[],
-    quantity: number
-};
+interface InventoryItem extends Product {
+    quantity: number;
+}
 
 const inventory: InventoryItem[] = [
-    { product: { product.name: "motor", price: 10.00 }, quantity: 10 },
-    { product: name: "sensor", product.price: 12.50, quantity: 4 },
-    { product: name: "LED", product.price: 1.00, quantity: 20 }
+    { name: "motor", price: 10.00, quantity: 10 },
+    { name: "sensor", price: 12.50, quantity: 4 },
+    { name: "LED", price: 1.00, quantity: 20 }
 ];
 
 export function calcInventoryValue(inventory: InventoryItem[]): number {
@@ -20,7 +19,6 @@ export function calcInventoryValue(inventory: InventoryItem[]): number {
         })
         return sum / inventory.length;
     }
-
     return 0;
 }
 
