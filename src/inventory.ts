@@ -14,11 +14,11 @@ const inventory: InventoryItem[] = [
 export function calcInventoryValue(inventory: InventoryItem[]): number {
     let sum: number = 0;
 
-    if (InventoryItem.length !== 0) {
-        InventoryItem.forEach(function (item) {
-            sum += InventoryItem.price * InventoryItem.quantity;
+    if (inventory.length !== 0) {
+        inventory.forEach(function (item) {
+            sum += inventory.price * inventory.quantity;
         })
-        return sum / InventoryItem.length;
+        return sum / inventory.length;
     }
 
     return 0;
